@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfis Profissionais</title>
+    <link rel="stylesheet" href="../css/landing.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="landing.html">Profissionais</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        <ul>
+    </nav>
+
+    <div class="container">
+        <h1>Profissionais da Nome do site</h1>
+        <p>A plataforma que gera conexões e oportunidades!</p>
+
+        <div id="cardsBox">
+            <div class="card">
+                <img src=" " alt="Ana Silva">
+                <h3>Ana Silva</h3>
+                <p><b>Front-End</b></p>
+                <button onclick="verDetalhes(1)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Carlos Almeida">
+                <h3>Carlos Almeida</h3>
+                <p><b>Analista de Dados</b></p>
+                <button onclick="verDetalhes(2)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Mariana Torres">
+                <h3>Mariana Torres</h3>
+                <p><b>UX Designer</b></p>
+                <button onclick="verDetalhes(3)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Lucas Pereira">
+                <h3>Lucas Pereira</h3>
+                <p><b>Dev Back-End</b></p>
+                <button onclick="verDetalhes(4)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Beatriz Costa">
+                <h3>Beatriz Costa</h3>
+                <p><b>Engenheira de Software</b></p>
+                <button onclick="verDetalhes(5)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Rafael Santos">
+                <h3>Rafael Santos</h3>
+                <p><b>Cientista de Dados</b></p>
+                <button onclick="verDetalhes(6)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Fernanda Lima">
+                <h3>Fernanda Lima</h3>
+                <p><b>Product Manager</b></p>
+                <button onclick="verDetalhes(7)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Gabriel Rocha">
+                <h3>Gabriel Rocha</h3>
+                <p><b>Dev Mobile</b></p>
+                <button onclick="verDetalhes(8)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Juliana Dias">
+                <h3>Juliana Dias</h3>
+                <p><b>Designer Gráfico</b></p>
+                <button onclick="verDetalhes(9)">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <img src=" " alt="Thiago Martins">
+                <h3>Thiago Martins</h3>
+                <p><b>Especialista em TI</b></p>
+                <button onclick="verDetalhes(10)">Ver detalhes</button>
+            </div>
+        </div>
+
+        <div id="InfoBox">
+            <h2 id="infoNome"></h2>
+            <p><b>Profissão:</b> <span id="profissao"></span></p>
+            <p><b>Experiência:</b> <span id="experiencia"></span></p>
+            <p><b>Habilidades:</b> <span id="habilidades"></span></p>
+            <p><b>Sobre:</b> <span id="sobre"></span></p>
+            
+            <div class="detalhe-buttons">
+                <button onclick="recomendarProf()">Recomendar Profissional</button>
+                <button onclick="mandarMensagem()">Mandar Mensagem</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/landing.js"></script>
+
+</body>
+</html>
