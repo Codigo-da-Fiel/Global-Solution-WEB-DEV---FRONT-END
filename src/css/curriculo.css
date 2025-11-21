@@ -1,0 +1,172 @@
+/* --- Variáveis de Cores do LinkedIn --- */
+:root {
+    --bg-color: #F3F2EF;
+    --card-bg: #FFFFFF;
+    --primary-blue: #0A66C2;
+    --primary-hover: #004182;
+    --text-dark: #191919;
+    --text-gray: #666666;
+    --border-color: #dedede;
+    --input-border: #00000099; /* Cinza escuro para bordas de input */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header --- */
+header {
+    background: var(--card-bg);
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.logo-text {
+    color: var(--primary-blue);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* --- Container Principal --- */
+.main-container {
+    width: 100%;
+    max-width: 550px; /* Largura mais estreita focada no formulário */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Estilo do Card --- */
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 24px;
+}
+
+/* --- Formulário --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.2s, background 0.2s;
+}
+
+input:hover, textarea:hover {
+    background-color: #f9f9f9;
+}
+
+/* Efeito de foco azul do LinkedIn */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 1px var(--primary-blue);
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* --- Botões --- */
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-outline:hover {
+    background-color: rgba(10, 102, 194, 0.1);
+}
+
+/* --- Utilitários --- */
+.hidden {
+    display: none;
+}
+
+/* --- Estilo da Mensagem de Sucesso --- */
+#success-card {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+    font-size: 40px;
+    color: #057642; /* Verde LinkedIn */
+    margin-bottom: 15px;
+}
+
+.feedback-text {
+    color: var(--text-gray);
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

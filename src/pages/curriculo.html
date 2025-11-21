@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Currículo</title>
+
+    <link rel="stylesheet" href="../css/curriculo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="logo-text">FutureWork</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <div class="card" id="form-card">
+            <h2>Vamos criar seu perfil</h2>
+            <p class="subtitle">Preencha as informações abaixo para se conectar a oportunidades.</p>
+            <form id="cvForm">
+                <div class="form-group">
+                    <label for="nome">1. Qual é o seu nome completo?</label>
+                    <input type="text" id="nome" placeholder="Ex: João Silva" required>
+                </div>
+                <div class="form-group">
+                    <label for="cargo">2. Qual seu cargo atual ou desejado?</label>
+                    <input type="text" id="cargo" placeholder="Ex: Desenvolvedor Front-end" required>
+                </div>
+                <div class="form-group">
+                    <label for="resumo">3. Faça um breve resumo profissional:</label>
+                    <textarea id="resumo" rows="4" placeholder="Conte um pouco sobre suas principais habilidades..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="empresa">4. Qual foi sua última empresa/projeto?</label>
+                    <input type="text" id="empresa" placeholder="Ex: Tech Solutions Ltda" required>
+                </div>
+                <div class="form-group">
+                    <label for="contato">5. E-mail para contato:</label>
+                    <input type="email" id="contato" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Currículo</button>
+            </form>
+        </div>
+        <div class="card hidden" id="success-card">
+            <div class="success-icon">✔</div>
+            <h2>Sucesso!</h2>
+            <p>Seu currículo foi enviado com sucesso.</p>
+            <p class="feedback-text">Nossos recrutadores analisarão seu perfil em breve.</p>
+            <button class="btn-outline" onclick="location.reload()">Enviar outro</button>
+        </div>
+    </div>
+    <script src="../js/curriculo.js"></script>
+</body>
+</html>
