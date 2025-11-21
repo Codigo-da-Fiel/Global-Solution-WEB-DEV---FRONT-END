@@ -1,0 +1,177 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0a3d62, #3c6382);
+    color: white;
+}
+
+nav {
+    width: 100%;
+    padding: 18px 40px;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slideDown 1s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4aa3ff;
+}
+
+nav ul li .ativo {
+    color: #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 3px;
+}
+
+/* ======== HERO ======== */
+.hero {
+    text-align: center;
+    padding: 80px 20px 100px;
+    animation: fadeIn 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.sobre-box {
+    background: rgba(255,255,255,0.06);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 1.5s ease;
+}
+
+.sobre-box h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.sobre-box p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.box-cards {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    width: 30%;
+    min-width: 230px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInCard 1s forwards;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.18);
+    transition: 0.4s;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInCard {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sobre-box {
+        padding: 25px;
+    }
+}
