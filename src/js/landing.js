@@ -15,29 +15,29 @@ let profissionalAtual = null;
 
 function verDetalhes(i){
     profissionalAtual = profissionais[i];
-    const detalheBox = document.getElementById("detalheBox");
+    const InfoBox = document.getElementById("InfoBox");
 
-    document.getElementById("detalheNome").innerText = profissionalAtual.nome;
-    document.getElementById("detalheProf").innerText = profissionalAtual.profissao;
-    document.getElementById("detalheExp").innerText = profissionalAtual.experiencia;
-    document.getElementById("detalheHab").innerText = profissionalAtual.habilidades.join(", ");
-    document.getElementById("detalheSobre").innerText = profissionalAtual.sobre;
+    document.getElementById("InfoNome").innerText = profissionalAtual.nome;
+    document.getElementById("profissao").innerText = profissionalAtual.profissao;
+    document.getElementById("experiencia").innerText = profissionalAtual.experiencia;
+    document.getElementById("habilidades").innerText = profissionalAtual.habilidades.join(", ");
+    document.getElementById("sobre").innerText = profissionalAtual.sobre;
 
     // Fade-in
-    detalheBox.style.opacity = 0;
-    detalheBox.style.display = "block";
+    InfoBox.style.opacity = 0;
+    InfoBox.style.display = "block";
     let opacity = 0;
     const fadeIn = setInterval(() => {
         if(opacity >= 1){
             clearInterval(fadeIn);
         } else {
             opacity += 0.05;
-            detalheBox.style.opacity = opacity;
+            InfoBox.style.opacity = opacity;
         }
     }, 20);
 
-    // Scroll suave
-    detalheBox.scrollIntoView({behavior:"smooth"});
+    
+    InfoBox.scrollIntoView({behavior:"smooth"});
 }
 
 function recomendarProf() {
