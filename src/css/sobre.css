@@ -43,7 +43,7 @@ nav ul li .ativo {
     padding-bottom: 3px;
 }
 
-/* ======== HERO ======== */
+
 .hero {
     text-align: center;
     padding: 80px 20px 100px;
@@ -159,19 +159,5 @@ nav ul li .ativo {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .sobre-box {
-        padding: 25px;
     }
 }
