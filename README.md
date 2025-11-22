@@ -9,11 +9,11 @@ Seu objetivo principal é preparar estudantes e profissionais para as transforma
 
 ## 🎯 Objetivos do Projeto
 
-* Criar um site moderno, responsivo e interativo, com foco na experiência do usuário.
-* Apresentar conceitos do futuro do trabalho, como tecnologia, inovação e habilidades digitais.
-* Construir páginas claras e organizadas para facilitar a navegação.
-* Utilizar efeitos visuais, animações e design consistente em todas as páginas.
-* Transmitir a identidade visual tecnológica e futurista da plataforma.
+Desenvolver uma aplicação web interativa utilizando HTML, CSS e JavaScript, que simule uma rede profissional voltada ao
+futuro do trabalho, permitindo exibir e explorar perfis de profissionais cadastrados, com informações pessoais, acadêmicas, profissionais e comportamentais.
+Os alunos deverão criar uma Landing Page que apresente uma listagem de profissionais 
+fictícios (dados simulados em uma Array) e permita visualizar informações completas de 
+cada perfil. Deve ser montada utilizando: HTML + CSS + JavaScript
 
 ---
 
