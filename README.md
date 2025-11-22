@@ -43,13 +43,13 @@ O site é composto pelas seguintes páginas e arquivos:
 ## 🌐 Link para o projeto publicado
 
 👉 **FutureWork – GitHub Pages**
-*(adicione o link após a publicação)*
+
 
 ---
 
-## ✨ **Efeitos Visuais e Recursos (CSS Avançado)**
+## ✨ Efeitos Visuais e Recursos (CSS Avançado)
 
-O site utiliza **CSS moderno** para reforçar a estética futurista da plataforma e melhorar a experiência do usuário.
+O site utiliza CSS moderno para reforçar a estética futurista da plataforma e melhorar a experiência do usuário.
 
 ### 🔹 Pseudo-classes utilizadas
 
@@ -78,14 +78,9 @@ O site utiliza **CSS moderno** para reforçar a estética futurista da plataform
 
 ## 📁 Arquivo de Efeitos
 
-Todos os efeitos visuais estão organizados no arquivo:
+Todos os efeitos visuais estão organizados na pasta:
 
 ```
-efeitos.css
-```
+css
 
-Importado no HTML através de:
-
-```html
-<link rel="stylesheet" href="efeitos.css">
 ```
