@@ -19,16 +19,35 @@ Seu objetivo principal é preparar estudantes e profissionais para as transforma
 
 ## 🗂️ Estrutura do Projeto
 
-O site é composto pelas seguintes páginas e arquivos:
+A organização do FutureWork segue uma estrutura simples e intuitiva dentro da pasta **`src`**, separando arquivos por função e facilitando a manutenção:
 
-* **`index.html`** – Página inicial com destaque para o futuro do trabalho.
-* **`vagas.html`** – Seção com vagas e oportunidades simuladas.
-* **`sobre.html`** – História da FutureWork e contexto da plataforma.
-* **`contato.html`** – Formulário de contato e informações da equipe.
-* **`assets/imgs`** – Pasta com imagens, ícones e ilustrações utilizadas no site.
-* **`style.css`** – Estilos gerais da plataforma (layout, cores, tipografia).
-* **`efeitos.css`** – Arquivo com animações, transições e efeitos visuais usados no site.
-* **`script.js`** – Script responsável por interações, seleção dinâmica do menu e efeitos JS.
+```
+src
+│
+├── assets/
+│   └── (imagens, ícones e ilustrações usadas no site)
+│
+├── css/
+│   ├── landing.css      (estilos da página inicial)
+│   ├── curriculo.css    (estilos da página de currículo)
+│   ├── estilo.css       (estilo geral e componentes principais)
+│   └── sobre.css        (estilos da página “sobre”)
+│
+├── js/
+│   ├── landing.js       (interações da Landing Page)
+│   ├── curriculo.js     (funções e comportamento da página de currículo)
+│   └── script.js        (scripts gerais, efeitos e navegação)
+│
+├── pages/
+│   ├── LandingPage.html
+│   ├── curriculo.html
+│   └── sobre.html
+│
+└── equipe.txt           (informações da equipe do projeto)
+
+index.html                (arquivo principal na raiz)
+
+```
 
 ---
 
